@@ -1,0 +1,58 @@
+.cServices                         
+{
+    background-color: #f3f1f1;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    height:auto;
+}
+.contServ
+{
+    margin-top:2%;
+    margin-bottom:2%;
+}
+.clnServ
+{
+    color:#38ada9;
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0px;
+    font-weight: 500;
+}
+
+.cservicesR
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    text-align: center;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.colCc , .colRc, .colOc, .colSc
+{
+    width: 280px;
+    text-align: left;
+    display: inline-block;
+}
+
+.colRc h2, .colCc h2, .colOc h2, .colSc h2
+{
+    color:#525252;
+    font-size:120%; 
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.colRc p, .colCc p, .colOc p, .colSc p
+{
+    color: gray;
+    font-size:14px; 
+    line-height: 20px;
+    margin: 20px 0px;
+    text-align: justify;
+}
+.serviceImg
+{
+    width: 100%;
+    border-radius: 3px;
+}

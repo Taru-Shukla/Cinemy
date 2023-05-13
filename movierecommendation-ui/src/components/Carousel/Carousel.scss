@@ -1,0 +1,52 @@
+@function longShadow($length,$angle) {
+    $val: 0px 0px transparent;
+    @for $i from 1 through $length {
+      $val: #{$val}, #{$i}px #{$i*$angle}px #ac2727;
+    }
+    @return $val;
+  }
+  
+  body {
+    background-size: 100vw 100vh; 
+    padding-top: 40vh;
+  }
+  
+  .txt {
+    position: absolute;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vmin;
+    font-weight: 700;
+    animation: shadowAnim 3.5s;
+    outline: none;
+    white-space: nowrap;
+    color:#e6be27;
+    height: 100%;
+    padding-bottom:5%;
+    left: 40%;
+    
+  }
+  
+  @keyframes shadowAnim {
+    0% {
+      text-shadow: longShadow(100,1);
+      color:#edd67e;
+      transform: scale(1.5, 1.5);
+    }
+    40% {
+      text-shadow: longShadow(100,1.5);
+      color:#f0d469;
+      transform: scale(1.5, 1.5);
+    }
+    50% {
+       color:#edcf5a;
+    }
+    75% { 
+      color:#ebc946;
+      text-shadow: none;
+    }
+    100% {
+      color:#e6be27;
+      opacity: 1;
+    }
+  }

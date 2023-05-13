@@ -1,0 +1,59 @@
+
+.header-wrapper {
+  width: 250%;
+  box-shadow: 0 2px 8px 4px rgba(247, 244, 244, 0);
+  position: absolute;
+  top: -75px;
+  
+
+
+  header {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    width: 70%;
+    padding: 1%;
+
+    a {
+      display: flex;
+      justify-content: left;
+      float: left;
+      text-decoration: none;
+
+      span {
+        margin-top: 6px;
+        color: rgb(243, 242, 242);
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+
+    .left-nav {
+      display: flex;
+      
+
+
+
+      a {
+        color: rgb(252, 250, 250);
+        text-decoration: none;
+        padding: 10px;
+        font-size: medium;
+
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+          color: #c1dbcc;
+        }
+      }
+    }
+
+
+  
+  }
+}
+
