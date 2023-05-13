@@ -6,7 +6,7 @@ import {MongoClient} from 'mongodb';
 import { APP_ROUTES ,APP_ROUTES_USER} from '../constants/routes.js';
 import cors from 'cors';
 
-const uri = "mongodb+srv://NetrA:Cinemy@9999@cluster0.qbpdy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "";
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
